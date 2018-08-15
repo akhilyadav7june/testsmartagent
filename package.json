@@ -1,0 +1,14 @@
+{
+  "name": "testsmartagent",
+  "version": "1.0.0",
+  "description": "testsmartagent sample",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "akhilesh yadav",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
