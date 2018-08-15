@@ -25,9 +25,15 @@ restService.post("/test", function(req, res) {
     req.body.result.parameters.suitename
       ? req.body.result.parameters.suitename
       : "your test agent is started";
-  return res.json({
-    text: [speech],
-    source: "testsmartsgent"
+  return res.json({"fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            speech
+          ]
+        }
+      }
+    ]
   });
 });
 
