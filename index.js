@@ -61,7 +61,7 @@ restService.post("/test", function(req, res) {
   //console.log(body);
   var config = JSON.parse(body);
   console.log(config.id);
-  restext="Congrats, Build "+restext+" is started."
+  restext="Congrats, Build "+config.id+" is started."
   return res.json({"fulfillmentMessages": [
       {
         "text": {
